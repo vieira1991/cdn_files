@@ -145,9 +145,9 @@ let outputs = {
   } 
 };
 
-let rnn = new mm.MusicRNN('static/drum_kit_rnn');
+let rnn = new mm.MusicRNN('https://storage.googleapis.com/download.magenta.tensorflow.org/tfjs_checkpoints/music_rnn/drum_kit_rnn');
 
-let vae = new mm.MusicVAE('static/drums_2bar_hikl_small');
+let vae = new mm.MusicVAE('https://storage.googleapis.com/download.magenta.tensorflow.org/tfjs_checkpoints/music_vae/drums_2bar_hikl_small
 
 Promise.all([
 	rnn.initialize(),
