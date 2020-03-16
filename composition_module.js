@@ -339,7 +339,7 @@ Promise.all([
     return res;
   }
 
- 
+  
   function setPatternLength(newPatternLength) {
     if (newPatternLength < state.patternLength) {
       state.pattern.length = newPatternLength;
@@ -451,8 +451,8 @@ Promise.all([
   addEventListener(
   'input',
   evt => Tone.Transport.bpm.value = state.tempo = +evt.target.value);
-   
-    
+  
+  document.querySelector('.progress_container').remove();  
   document.querySelector('.app').style.display = null;
   document.getElementById("regenerate").click();
   
